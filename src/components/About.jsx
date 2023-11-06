@@ -45,9 +45,15 @@ const About = () => {
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
+        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] text-justify"
       >
-        I am a self taught mern stack developer and a technology enthusiast. Bsc statistian with a strong foundation in Data management. I have developed 2 robust web application and more than 5 mini project which not only enhanced my technical skills but also sharpened my ability to deliver high-quality work within strict timelines. My strength is to create engaging and compelling websites that truly resonate with my users. I pride myself on my reputation for delivering exceptional results. 
+        I am a self taught MERN stack developer with a background in Electronics
+        and Communication Engineering. I have developed 2 robust web application
+        and more than 5 mini project which not only enhanced my technical skills
+        but also sharpened my ability to deliver high-quality work within strict
+        timelines. My strength is to create engaging and compelling websites
+        that truly resonate with my users. I pride myself on my reputation for
+        delivering exceptional results.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">

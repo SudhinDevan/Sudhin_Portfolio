@@ -131,7 +131,7 @@ const experiences = [
     company_name: "TKM College of Engineering",
     icon: tesla,
     iconBg: "#E6DEDD",
-    date: "2019 - 2022",
+    date: "2016 - 2020",
     points: [],
   },
   {
@@ -139,7 +139,7 @@ const experiences = [
     company_name: "S.T Paul's Higher Secondary School",
     icon: shopify,
     iconBg: "#E6DEDD",
-    date: "2017 - 2019",
+    date: "2014 - 2016",
     points: [],
   },
 ];
