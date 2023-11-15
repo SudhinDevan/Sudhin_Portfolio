@@ -17,17 +17,12 @@ import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
-// import typescript from "./tech/typescript.png";
-// import threejs from "./tech/threejs.svg";
-
 import meta from "./company/meta.png";
 import stpauls from "./company/stpauls.png";
 import starbucks from "./company/starbucks.png";
 import tkm from "./company/tkmce.png";
 import broto from "./company/broto.png";
 import masco from "./company/masco.png";
-
-// import trinity from "./Trinity.jpg";
 import papertrail from "./papertrailhome.png";
 import runInStyle from "./runInStyle.jpg";
 import netflix from "./netflix.jpg";
@@ -55,15 +50,12 @@ export {
   reactjs,
   redux,
   tailwind,
-  // typescript,
-  // threejs,
   meta,
   stpauls,
   starbucks,
   tkm,
   netflix,
   runInStyle,
-  // trinity,
   papertrail,
   dressCustomizer,
   clearSki,

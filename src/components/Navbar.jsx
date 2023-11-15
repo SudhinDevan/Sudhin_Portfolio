@@ -1,28 +1,18 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
 
 const downloadCV = () => {
-  // Replace 'your-cv-filename.pdf' with the actual name of your CV file
-  const fileName = "Sudhin_Devan_CV.pdf";
-  const filePath = `./${fileName}`;
+  const fileUrl =
+    "https://res.cloudinary.com/dtbohkfpy/image/upload/v1700056087/Sudhin_Devan_CV_lutimk.pdf";
 
-  // Create an anchor element
   const link = document.createElement("a");
-  link.href = filePath;
-  link.download = fileName;
-
-  // Append the anchor element to the body
-  document.body.appendChild(link);
-
-  // Trigger a click on the anchor element
+  link.href = fileUrl;
+  link.target = "_blank"; // Open the link in a new tab
+  link.rel = "noopener noreferrer"; // Security best practice when opening links in a new tab
   link.click();
-
-  // Remove the anchor element from the body
-  document.body.removeChild(link);
 };
 
 const Navbar = () => {
