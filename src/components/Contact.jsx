@@ -1,7 +1,6 @@
 import { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
-
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
@@ -33,8 +32,8 @@ const Contact = () => {
 
     emailjs
       .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        "service_8f2x8u9",
+        "template_xkqwvdo",
         {
           from_name: form.name,
           to_name: "Sudhin Devan",
@@ -42,7 +41,7 @@ const Contact = () => {
           to_email: "sudhindevan@gmail.com",
           message: form.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        "7GMX4HTgER02XI3F7"
       )
       .then(
         () => {

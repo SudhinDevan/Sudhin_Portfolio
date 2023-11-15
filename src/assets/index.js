@@ -1,4 +1,4 @@
-import logo from "./logo.jpg";
+import logo from "./logo.png";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -6,7 +6,6 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
-
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
@@ -18,20 +17,23 @@ import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
-import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
+// import typescript from "./tech/typescript.png";
+// import threejs from "./tech/threejs.svg";
 
 import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
+import stpauls from "./company/stpauls.png";
 import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import tkm from "./company/tkmce.png";
+import broto from "./company/broto.png";
+import masco from "./company/masco.png";
 
-import trinity from "./Trinity.jpg";
+// import trinity from "./Trinity.jpg";
+import papertrail from "./papertrailhome.png";
 import runInStyle from "./runInStyle.jpg";
 import netflix from "./netflix.jpg";
-import dressCustomizer from './dress_customizer.png'
-import clearSki from './clearSki.png'
-import chitChat from './chit-chat.png'
+import dressCustomizer from "./dress_customizer.png";
+import clearSki from "./employeemanagement_desktop.png";
+import chitChat from "./chit-chat.png";
 
 export {
   logo,
@@ -53,16 +55,19 @@ export {
   reactjs,
   redux,
   tailwind,
-  typescript,
-  threejs,
+  // typescript,
+  // threejs,
   meta,
-  shopify,
+  stpauls,
   starbucks,
-  tesla,
+  tkm,
   netflix,
   runInStyle,
-  trinity,
+  // trinity,
+  papertrail,
   dressCustomizer,
   clearSki,
-  chitChat
+  masco,
+  broto,
+  chitChat,
 };

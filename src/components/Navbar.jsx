@@ -5,6 +5,26 @@ import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
 
+const downloadCV = () => {
+  // Replace 'your-cv-filename.pdf' with the actual name of your CV file
+  const fileName = "Sudhin_Devan_CV.pdf";
+  const filePath = `./${fileName}`;
+
+  // Create an anchor element
+  const link = document.createElement("a");
+  link.href = filePath;
+  link.download = fileName;
+
+  // Append the anchor element to the body
+  document.body.appendChild(link);
+
+  // Trigger a click on the anchor element
+  link.click();
+
+  // Remove the anchor element from the body
+  document.body.removeChild(link);
+};
+
 const Navbar = () => {
   // state for active link
   const [active, setActive] = useState("");
@@ -47,7 +67,10 @@ const Navbar = () => {
           <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
           <p className="text-white text-[18px] font-bold cursor-pointer flex ">
             Sudhin Devan &nbsp;
-            <span className="sm:block hidden"> | DEVELOPER</span>
+            <span className="sm:block hidden">
+              {" "}
+              | Software Development Engineer I
+            </span>
           </p>
         </Link>
 
@@ -63,6 +86,14 @@ const Navbar = () => {
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
           ))}
+          <li>
+            <a
+              className="text-secondary text-[18px] font-medium cursor-pointer hover:text-white"
+              onClick={downloadCV}
+            >
+              Download CV
+            </a>
+          </li>
         </ul>
 
         <div className="sm:hidden flex flex-1 justify-end items-center">
