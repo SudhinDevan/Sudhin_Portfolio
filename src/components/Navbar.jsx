@@ -6,7 +6,7 @@ import { logo, menu, close } from "../assets";
 
 const downloadCV = () => {
   const fileUrl =
-    "https://res.cloudinary.com/dtbohkfpy/image/upload/v1700056087/Sudhin_Devan_CV_lutimk.pdf";
+    "https://res.cloudinary.com/dtbohkfpy/image/upload/v1700150042/Sudhin_Devan_CV_xmlewp.pdf";
 
   const link = document.createElement("a");
   link.href = fileUrl;
@@ -114,6 +114,14 @@ const Navbar = () => {
                   <a href={`#${nav.id}`}>{nav.title}</a>
                 </li>
               ))}
+              <li>
+                <a
+                  className="text-secondary text-[16px] font-medium cursor-pointer hover:text-white"
+                  onClick={downloadCV}
+                >
+                  Download CV
+                </a>
+              </li>
             </ul>
           </div>
         </div>
