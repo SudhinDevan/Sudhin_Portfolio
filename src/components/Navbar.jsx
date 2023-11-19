@@ -6,7 +6,7 @@ import { logo, menu, close } from "../assets";
 
 const downloadCV = () => {
   const fileUrl =
-    "https://res.cloudinary.com/dtbohkfpy/image/upload/v1700150042/Sudhin_Devan_CV_xmlewp.pdf";
+    "https://res.cloudinary.com/dtbohkfpy/image/upload/v1700417184/Sudhin_Devan_CV_kynnnf.pdf";
 
   const link = document.createElement("a");
   link.href = fileUrl;
@@ -84,6 +84,16 @@ const Navbar = () => {
               Download CV
             </a>
           </li>
+          <li>
+            <a
+              className="text-secondary text-[18px] font-medium cursor-pointer hover:text-white"
+              href="https://github.com/SudhinDevan"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
+          </li>
         </ul>
 
         <div className="sm:hidden flex flex-1 justify-end items-center">
@@ -120,6 +130,16 @@ const Navbar = () => {
                   onClick={downloadCV}
                 >
                   Download CV
+                </a>
+              </li>
+              <li>
+                <a
+                  className="text-secondary text-[16px] font-medium cursor-pointer hover:text-white"
+                  href="https://github.com/SudhinDevan"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub
                 </a>
               </li>
             </ul>
