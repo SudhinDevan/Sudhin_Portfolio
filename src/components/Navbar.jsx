@@ -6,7 +6,7 @@ import { logo, menu, close } from "../assets";
 
 const downloadCV = () => {
   const fileUrl =
-    "https://res.cloudinary.com/dtbohkfpy/image/upload/v1700417184/Sudhin_Devan_CV_kynnnf.pdf";
+    "https://res.cloudinary.com/dtbohkfpy/image/upload/v1700417184/Sudhin_Devan_CV.pdf";
 
   const link = document.createElement("a");
   link.href = fileUrl;
