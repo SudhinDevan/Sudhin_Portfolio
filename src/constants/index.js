@@ -19,10 +19,11 @@ import {
   clearSki,
   tkm,
   papertrail,
+  skillSail,
   broto,
+  desvu,
   masco,
 } from "../assets";
-
 
 export const navLinks = [
   {
@@ -107,11 +108,19 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Software Development Engineer",
-    company_name: "Intern, Brototype",
+    title: "Full Stack Development-MERN Stack",
+    company_name: "Brototype",
     icon: broto,
     iconBg: "#E6DEDD",
-    date: "2023 - present",
+    date: "January 2023 - January 2024",
+    points: [],
+  },
+  {
+    title: "Front End Developer",
+    company_name: "Desvutrip Travel Solutions LLP",
+    icon: desvu,
+    iconBg: "#E6DEDD",
+    date: "July 2021 - January 2023",
     points: [],
   },
   {
@@ -119,7 +128,7 @@ const experiences = [
     company_name: "Masco Constructions",
     icon: masco,
     iconBg: "#E6DEDD",
-    date: "2020 - 2022",
+    date: "June 2020 - April 2021",
     points: [],
   },
   {
@@ -141,6 +150,82 @@ const experiences = [
 ];
 
 const projects = [
+  {
+    name: "SkillSail-eLearning",
+    description:
+      "This MERN-powered e-learning platform equips you with the essential life and business skills you need to succeed. Craft and share interactive courses, foster collaboration through real-time chat, and enjoy a seamless learning experience with secure logins, beautiful design, and convenient payment options. SkillSail, where your growth knows no bounds!",
+    tags: [
+      {
+        name: "ReactJS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Redux",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "JavaScript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "RestApi",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "NodeJS ",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "MongoDB",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "ExpressJS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Tailwind CSS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Nodemailer",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Razorpay",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "nginx",
+        color: "green-text-gradient",
+      },
+      {
+        name: "AWS Route53",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "AWS EC2",
+        color: "green-text-gradient",
+      },
+      {
+        name: "AJAX-AXIOS",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: skillSail,
+    source_code_link: "https://github.com/SudhinDevan/SkillSail-Client",
+    live_link: "https://skillsail.vercel.app/",
+    features: [
+      "Implemented a secure registration and authentication system using JWT for enhanced security",
+      "Implemented Socket.IO for real-time chat on SkillSail, fostering interactivity among students and tutors",
+      "Utilized Tailwind CSS to ensure an appealing and user-friendly interface",
+      "Utilized REST API for seamless integration and efficient handling of API calls",
+      "Implemented Cloudinary for storing videos and images",
+      "Implemented Nodemailer for enabling the mail services",
+      "Integrated RazorPay for secure and efficient payment processing, supporting various payment methods on the platform",
+      "Hosted using AWS EC2 AWS Route53 along with Nginx as web server, and also deployed on Vercel for additional hosting options.",
+    ],
+  },
   {
     name: "Papertrail",
     description:

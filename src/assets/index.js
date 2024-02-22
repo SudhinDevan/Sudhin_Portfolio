@@ -22,8 +22,10 @@ import stpauls from "./company/stpauls.png";
 import starbucks from "./company/starbucks.png";
 import tkm from "./company/tkmce.png";
 import broto from "./company/broto.png";
+import desvu from "./company/desvu.png";
 import masco from "./company/masco.png";
 import papertrail from "./papertrailhome.png";
+import skillSail from "./skillsailHome.png";
 import runInStyle from "./runInStyle.jpg";
 import netflix from "./netflix.jpg";
 import dressCustomizer from "./dress_customizer.png";
@@ -61,5 +63,7 @@ export {
   clearSki,
   masco,
   broto,
+  desvu,
+  skillSail,
   chitChat,
 };

@@ -45,15 +45,25 @@ const About = () => {
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] text-justify"
+        className="mt-4 text-secondary text-[17px] max-w-4xl leading-[30px] text-justify"
       >
-        I am a self taught MERN stack developer with a background in Electronics
-        and Communication Engineering. I have developed 2 robust web application
-        and more than 5 mini project which not only enhanced my technical skills
-        but also sharpened my ability to deliver high-quality work within strict
-        timelines. My strength is to create engaging and compelling websites
-        that truly resonate with my users. I pride myself on my reputation for
-        delivering exceptional results.
+        My name is Sudhin Devan. I am an Electronics and Communication Engineer
+        from TKM College of Engineering, Kerala. After college, I started out as
+        a procurement associate in a construction company. This experience
+        taught me valuable skills in planning and leadership. However, my true
+        passion lay in building web applications and building Logic. Driven by
+        this passion, I searched for opportunities and landed a position as a
+        front-end developer at Desvutrip Travel Solutions LLP. During my time at
+        Desvutrip Travel Solutions LLP, I built several applications for the
+        company and its partner firms. Unfortunately, the company dissolved,
+        prompting me to seek new opportunities. Instead of solely focusing on
+        front-end development, I decided to expand my skill set by learning
+        back-end development as well which would allow me to pursue a career as
+        a full-stack developer. With this goal in mind, I enrolled in a bootcamp
+        where I build 2major projects and several mini projects, which helped me
+        upskill and become a full-stack developer. I am now seeking exciting
+        opportunities as a Full Stack MERN Developer. Thank you for getting to
+        know me.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">

@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
+import Swal from "sweetalert2";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
@@ -32,11 +33,11 @@ const Contact = () => {
 
     emailjs
       .send(
-        "service_8f2x8u9",
-        "template_xkqwvdo",
+        "service_nltkycw",
+        "template_13nkv8f",
         {
           from_name: form.name,
-          to_name: "Sudhin Devan",
+          to_name: "Portfolio Message",
           from_email: form.email,
           to_email: "sudhindevan@gmail.com",
           message: form.message,
@@ -46,8 +47,13 @@ const Contact = () => {
       .then(
         () => {
           setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
-
+          Swal.fire({
+            position: "center",
+            icon: "success",
+            title: "Thank you. I will get back to you as soon as possible.",
+            showConfirmButton: false,
+            timer: 2500,
+          });
           setForm({
             name: "",
             email: "",
@@ -58,7 +64,7 @@ const Contact = () => {
           setLoading(false);
           console.error(error);
 
-          alert("Ahh, something went wrong. Please try again.");
+          alert("something went wrong. Please try again.");
         }
       );
   };

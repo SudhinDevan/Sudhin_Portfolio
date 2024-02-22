@@ -6,7 +6,7 @@ import { logo, menu, close } from "../assets";
 
 const downloadCV = () => {
   const fileUrl =
-    "https://res.cloudinary.com/dtbohkfpy/image/upload/v1700417184/Sudhin_Devan_CV.pdf";
+    "https://res.cloudinary.com/dtbohkfpy/image/upload/v1708575483/Sudhin_Devan_Resume_o8t985.pdf";
 
   const link = document.createElement("a");
   link.href = fileUrl;
@@ -59,7 +59,7 @@ const Navbar = () => {
             Sudhin Devan &nbsp;
             <span className="sm:block hidden">
               {" "}
-              | Software Development Engineer I
+              | Software Development Engineer
             </span>
           </p>
         </Link>
