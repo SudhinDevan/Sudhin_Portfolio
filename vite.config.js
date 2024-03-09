@@ -5,7 +5,7 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   base: "/Sudhin_Portfolio/",
   plugins: [react()],
-  // server: {
-  //   host: true,
-  // },
+  server: {
+    host: true,
+  },
 });

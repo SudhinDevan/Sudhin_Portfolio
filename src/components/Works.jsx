@@ -56,7 +56,7 @@ const ProjectCard = ({
 
         <div className="mt-5">
           <div className="flex items-center justify-between">
-            <h3 className="text-white font-bold text-[24px]">{name}</h3>
+            <h3 className="text-white font-bold md:text-[24px]">{name}</h3>
             <h3
               onClick={() => window.open(live_link, "_blank")}
               className="px-2 cursor-pointer text-blue-600 underline-offset-2 underline"
@@ -64,10 +64,12 @@ const ProjectCard = ({
               Go Live
             </h3>
           </div>
-          <p className="mt-2 text-secondary text-[14px]">{description}</p>
+          <p className="mt-2 text-secondary text-[14px] text-justify">
+            {description}
+          </p>
         </div>
         <div className="mt-4 font-bold tracking-wider">Features</div>
-        <ul className="mt-5 list-disc ml-5 space-y-2">
+        <ul className="mt-5 list-disc ml-5 space-y-2 text-justify">
           {features.map((point, index) => (
             <li
               key={`experience-point-${index}`}
@@ -103,7 +105,7 @@ const Works = () => {
       <div className="w-full flex">
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
+          className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px] text-justify"
         >
           Following projects showcases my skills and experience through
           real-world examples of my work. Each project is briefly described with
