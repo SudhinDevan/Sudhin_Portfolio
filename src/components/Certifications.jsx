@@ -2,12 +2,11 @@ import { motion } from "framer-motion";
 import { textVariant } from "../utils/motion";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
-import { slideIn } from "../utils/motion";
 
 const Certifications = () => {
   return (
     <>
-      <div className="px-6 md:px-48 cursor-default pt-10">
+      <div className="px-6 cursor-default pt-10 w-full">
         <motion.div variants={textVariant()}>
           <p className={`${styles.sectionSubText} `}>My Previous</p>
           <h2 className={`${styles.sectionHeadText}`}>Certifications</h2>
@@ -16,7 +15,7 @@ const Certifications = () => {
           className="pt-6 pb-5 px-3 rounded-xl"
           style={{ backgroundColor: "rgba(16, 13, 37, 0.8)" }}
         >
-          <ul className="text-lg">
+          <ul className="text-lg md:px-10 px-0">
             <li className="pb-5 flex flex-col">
               &#183; The Web Developer Bootcamp 2023 <br />
               <span className="mt-3 text-gray-400">
