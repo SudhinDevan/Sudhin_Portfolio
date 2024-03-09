@@ -11,10 +11,14 @@ import {
   Certifications,
 } from "./components";
 
+const handleRightClick = (e) => {
+  e.preventDefault();
+};
+
 const App = () => {
   return (
     <BrowserRouter>
-      <div className="relative z-0 bg-primary">
+      <div className="relative z-0 bg-primary" onContextMenu={handleRightClick}>
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
           <Navbar />
           <Hero />
@@ -24,7 +28,7 @@ const App = () => {
         <Tech />
         <Works />
         <div className="relative z-0">
-        <Certifications />
+          <Certifications />
           <Contact />
           <StarsCanvas />
         </div>

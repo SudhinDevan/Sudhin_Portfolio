@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { textVariant } from "../utils/motion";
 import { styles } from "../styles";
+import { SectionWrapper } from "../hoc";
+import { slideIn } from "../utils/motion";
 
 const Certifications = () => {
   return (
@@ -10,7 +12,10 @@ const Certifications = () => {
           <p className={`${styles.sectionSubText} `}>My Previous</p>
           <h2 className={`${styles.sectionHeadText}`}>Certifications</h2>
         </motion.div>
-        <div className="pt-6">
+        <div
+          className="pt-6 pb-5 px-3 rounded-xl"
+          style={{ backgroundColor: "rgba(16, 13, 37, 0.8)" }}
+        >
           <ul className="text-lg">
             <li className="pb-5 flex flex-col">
               &#183; The Web Developer Bootcamp 2023 <br />
@@ -31,13 +36,18 @@ const Certifications = () => {
                 G-tech, Kozhikode, Kerala (06/2011)
               </span>
             </li>
-            <li className="pb-5 flex flex-col">
+            <a
+              className="pb-5 flex flex-col"
+              href="https://sudhin-devan.s3.ap-south-1.amazonaws.com/ceritifications_%26_workshops/img003.jpg"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               &#183; Soft Skills For Business Negotiations and Marketing
               Strategies
-              <span className="mt-3 ml-3 text-gray-400">
+              <span className="mt-3 ml-3 text-gray-400 hover:underline">
                 IIT Kharagpur (NPTEL - 04/2019)
               </span>
-            </li>
+            </a>
             <li className="pb-5 flex flex-col">
               &#183; Viral Marketing and How to Craft Contagious Content
               <span className="mt-3 text-gray-400">
@@ -51,19 +61,40 @@ const Certifications = () => {
                 </a>{" "}
               </span>
             </li>
-            <li className="pb-5 flex flex-col">
+            <a
+              className="pb-5 flex flex-col"
+              href="https://sudhin-devan.s3.ap-south-1.amazonaws.com/ceritifications_%26_workshops/img007.jpg"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               &#183; Training on HTML5, JavaScript, CSS3, Dataspace Management
               System
-              <span className="mt-3 ml-3 text-gray-400">
+              <span className="mt-3 ml-3 text-gray-400 hover:underline">
                 Keltron Trivandrum (02/2018)
               </span>
-            </li>
-            <li className="pb-5 flex flex-col">
+            </a>
+            <a
+              className="pb-5 flex flex-col"
+              href="https://sudhin-devan.s3.ap-south-1.amazonaws.com/ceritifications_%26_workshops/img005.jpg"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               &#183; Artificial Intelligence and Machine Learning Workshop
-              <span className="mt-3 ml-3 text-gray-400">
+              <span className="mt-3 ml-3 text-gray-400 hover:underline">
                 IISC Bangalore (01/2020)
               </span>
-            </li>
+            </a>
+            <a
+              className="pb-5 flex flex-col"
+              href="https://sudhin-devan.s3.ap-south-1.amazonaws.com/ceritifications_%26_workshops/img006.jpg"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              &#183; IISC-Pravega's Flagship event Pravega Innovation Summit
+              <span className="mt-3 ml-3 text-gray-400 hover:underline">
+                IISC Bangalore (02/2020)
+              </span>
+            </a>
           </ul>
         </div>
       </div>
@@ -71,4 +102,4 @@ const Certifications = () => {
   );
 };
 
-export default Certifications;
+export default SectionWrapper(Certifications, "certification");
