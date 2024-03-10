@@ -29,12 +29,17 @@ const Certifications = () => {
                 </a>{" "}
               </span>
             </li>
-            <li className="pb-5 flex flex-col">
+            <a
+              className="pb-5 flex flex-col"
+              href="https://sudhin-devan.s3.ap-south-1.amazonaws.com/ceritifications_%26_workshops/gtec-java-sudhin.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               &#183; Basics of Java Programming
-              <span className="mt-3 ml-3 text-gray-400">
+              <span className="mt-3 ml-3 text-gray-400 hover:underline">
                 G-tech, Kozhikode, Kerala (06/2011)
               </span>
-            </li>
+            </a>
             <a
               className="pb-5 flex flex-col"
               href="https://sudhin-devan.s3.ap-south-1.amazonaws.com/ceritifications_%26_workshops/img003.jpg"
